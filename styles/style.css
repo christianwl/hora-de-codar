@@ -1,9 +1,11 @@
+@import "reset.css";
+@import "base.css";
+
 :root {
   --color-text: #f4f4f4;
 }
 
 body {
-  min-height: 100vh;
   background-color: black;
 }
 
@@ -25,17 +27,18 @@ main {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: var(--text-3xl);
+  text-align: center;
   color: var(--color-text);
 }
 
-img {
+.bearIcon {
   width: 64px;
   height: 64px;
 }
 
-img:hover {
-  animation: swing 2s ease-in-out infinite;
+.bearIcon:hover {
+  animation: swing 2s ease-in-out infinite !important;
 }
 
 @keyframes swing {
@@ -68,7 +71,7 @@ button {
   border-radius: 10px;
   padding: 5px;
 
-  font-size: 1.2rem;
+  font-size: var(--text-sm);
   color: #f4f4f4;
 
   cursor: pointer;
@@ -84,7 +87,7 @@ footer {
   justify-content: center;
 
   color: var(--color-text);
-  font-size: 1.6rem;
+  font-size: var(--text-md);
 }
 
 .iconsCopy {
@@ -93,5 +96,5 @@ footer {
   right: 0;
   bottom: 0;
 
-  font-size: 0.8rem;
+  font-size: var(--text-xs);
 }
