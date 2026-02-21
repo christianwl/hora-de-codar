@@ -28,8 +28,8 @@ function iniciarPrograma() {
       prompt(
         "======| Calculadora de Área de Figuras Planas |====== \n\nDigite qual opção deseja calcular:\n" +
           opcaoFiguraPlana +
-          "\n[ 0 ] ---> Encerrar Calculo <---\n "
-      )
+          "\n[ 0 ] ---> Encerrar Calculo <---\n ",
+      ),
     );
 
     if (indiceFiguraPlana == 0) {
@@ -93,8 +93,8 @@ function pedirValor(tipoDeValor) {
     prompt(
       `Digite o valor de medida ${tipoDeValor} do ${
         tiposDeFigura[indiceFiguraPlana - 1]
-      }: `
-    )
+      }: `,
+    ),
   );
 }
 
